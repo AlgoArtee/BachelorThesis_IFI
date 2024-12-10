@@ -24,3 +24,9 @@ mongoose
 app.get("/api/test", (req, res) => {
   res.json({ message: "API is working!" });
 });
+
+
+const authRoutes = require("./routes/auth");
+
+app.use("/api/auth", authRoutes);
+
