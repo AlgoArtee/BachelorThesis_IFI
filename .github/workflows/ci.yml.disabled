@@ -1,0 +1,75 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        component: [web_application, playwright, hercules, xlam] # Test all components
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js (for web_application and Playwright)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # Set up Python (for Hercules and xLAM)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # Install dependencies for the component
+      - name: Install dependencies
+        run: |
+          if [ "${{ matrix.component }}" == "web_application" ]; then
+            cd web_application
+            npm install
+          elif [ "${{ matrix.component }}" == "playwright" ]; then
+            cd testing_tools/classic_automated_testing/playwright
+            npm install
+          elif [ "${{ matrix.component }}" == "hercules" ]; then
+            cd testing_tools/agentic_testing/hercules
+            python -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
+          elif [ "${{ matrix.component }}" == "xlam" ]; then
+            cd testing_tools/lam_testing/xlam
+            python -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
+          fi
+
+      # Run tests for the component
+      - name: Run tests
+        run: |
+          if [ "${{ matrix.component }}" == "web_application" ]; then
+            cd web_application
+            npm test
+          elif [ "${{ matrix.component }}" == "playwright" ]; then
+            cd testing_tools/classic_automated_testing/playwright
+            npx playwright test
+          elif [ "${{ matrix.component }}" == "hercules" ]; then
+            cd testing_tools/agentic_testing/hercules
+            source venv/bin/activate
+            pytest tests/
+          elif [ "${{ matrix.component }}" == "xlam" ]; then
+            cd testing_tools/lam_testing/xlam
+            source venv/bin/activate
+            pytest tests/
+          fi

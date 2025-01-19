@@ -1,0 +1,10 @@
+{
+    "base_url": "https://api.curanava.com",
+    "endpoints": {
+      "patients": "/patients",
+      "appointments": "/appointments",
+      "inventory": "/inventory",
+      "login": "/auth/login"
+    }
+  }
+  

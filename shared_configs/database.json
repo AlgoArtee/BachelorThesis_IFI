@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 5432,
+    "user": "curanava_user",
+    "password": "securepassword123",
+    "database": "curanava_db"
+}
