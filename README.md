@@ -98,7 +98,7 @@ BachelorThesis_IFI/
    npm install
 
    cd ../../1_testing_tools/01_classic_automated_testing/playwright
-   npm init playwright@latest (choose TypeScript, e2e tests: tests/e2e)
+   npm init playwright@latest (choose TypeScript, e2e tests: tests/e2e, Install Playwright browsers true)
 
    cd ../../02_agentic_testing/testzeus_hercules
    python -m venv hercules-venv
