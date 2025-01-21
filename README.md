@@ -120,16 +120,19 @@ BachelorThesis_IFI/
 
 
    ```
+
 3. Set up the database:
-   - Configure the database connection in `config/database.js`
+   - Configure the database connection in `.env`
+
 4. Start the development server:
    ```bash
-   npm run dev
+   (in progress)
    ```
 
+5. Make a copy of .env-example, rename it to .env and enter your credential for the different services
+
 ### Deployment
-- Configure the environment variables for the target cloud platform.
-- Deploy using the platform-specific CLI or UI tools.
+- (in progress)
 
 ---
 
