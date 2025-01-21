@@ -1,12 +1,29 @@
 import json
+import os
+import warnings
 import torch 
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
+
+# Annoying Warning, Solution pending:
+# ---
+# The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. 
+# Please pass your input's `attention_mask` to obtain reliable results.
+# Setting `pad_token_id` to `eos_token_id`:32021 for open-end generation.
+# The attention mask is not set and cannot be inferred from input because pad token is same as eos token. 
+# As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+# ---
+#warnings.filterwarnings('ignore')  # Suppress all other warnings
+#os.environ['TRANSFORMERS_VERBOSITY'] = 'error'  # Suppress transformer warnings
 
 torch.random.manual_seed(0) 
 
 model_name = "Salesforce/xLAM-1b-fc-r"
 model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype="auto", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained(model_name) 
+
+# Solving annoying warning?
+model.generation_config.pad_token_id = tokenizer.pad_token_id
 
 # Please use our provided instruction prompt for best performance
 task_instruction = """
@@ -71,7 +88,7 @@ openai_format_tools = [get_weather_api, search_api]
 
 # Helper function to convert openai format tools to our more concise xLAM format
 def convert_to_xlam_tool(tools):
-    #''''''
+    ''''''
     if isinstance(tools, dict):
         return {
             "name": tools["name"],
