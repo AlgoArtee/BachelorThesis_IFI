@@ -1,6 +1,6 @@
 # Testing System for AI and Automation Tools
 
-This project focuses on developing and evaluating a robust testing system for analyzing the performance of traditional testing tools, intelligent AI agents, and Large Action Models (LAMs). The system provides a unified dashboard for monitoring and managing the testing process, using a prototype hospital management application, CuraNava, as a test bed.
+This project focuses on comparing, evaluating and analyzing the performance of traditional testing tools, intelligent AI agents, and Large Action Models (LAMs). The system provides a unified dashboard for monitoring and managing the testing process, using a prototype hospital management application, CuraNava, as a test bed.
 
 CuraNava serves as a modular and scalable application that includes essential hospital management features such as patient management, appointment scheduling, medical test result management, and medicine inventory. Although future plans may involve implementing three quality levels for each feature (poor, medium, high), these levels are not currently available.
 
@@ -35,19 +35,19 @@ CuraNava serves as a modular and scalable application that includes essential ho
 
 ---
 
-## System Architecture
+## Prototype System Architecture
 
 ### Frontend
 - **Technology**: React
-- **Features**: Interactive dashboard for test and system monitoring
+- **Features**: 
 
 ### Backend
 - **Technology**: Node.js with Express
-- **Features**: RESTful APIs for test execution and data exchange
+- **Features**: 
 
 ### Database
-- **Type**: SQL database
-- **Features**: Structured schema for storing test data, audit logs, and application metadata
+- **Type**: SQLite database
+- **Features**: 
 
 ### Deployment
 - **Platform**: (tba)
@@ -74,19 +74,51 @@ BachelorThesis_IFI/
 ## Setup and Deployment
 
 ### Prerequisites
+- React with Typescript via Vite
 - Node.js
-- SQL database (e.g., MySQL, PostgreSQL)
+- SQLite database (later MySQL, PostgreSQL)
 - Git
 
-### Installation
+### Installation (Windows 10, 11)
+(In progress ...)
+
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd TestingSystem
    ```
 2. Install dependencies:
    ```bash
+   
+   cd BachelorThesis_IFI/0_curanava/
    npm install
+   
+   cd frontend
+   npm install
+   cd ../backend
+   npm install
+
+   cd ../../1_testing_tools/01_classic_automated_testing/playwright
+   npm init playwright@latest (choose TypeScript, e2e tests: tests/e2e)
+
+   cd ../../02_agentic_testing/testzeus_hercules
+   python -m venv hercules-venv
+   ./hercules-venv/Scripts/activate
+   pip install testzeus-hercules
+   playwright install --with-deps
+   mkdir input
+   mkdir output
+   mkdir test_data
+
+   cd../../03_lam_testing/xlam
+   python -m venv xlam-venv
+   ./xlam-venv/Scripts/activate
+   pip install transformers
+   pip install torch
+   pip install datasets
+   pip install tokenizers
+   (pip install -r requirements.txt)
+
+
    ```
 3. Set up the database:
    - Configure the database connection in `config/database.js`
