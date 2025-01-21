@@ -118,6 +118,8 @@ messages=[
 
 inputs = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt").to(model.device)
 
+print("The requests are being generated. Don't interrupt the process, it can take about 10 minutes ...  ")
+
 # tokenizer.eos_token_id is the id of <|EOT|> token
 outputs = model.generate(inputs, max_new_tokens=512, do_sample=False, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id)
 

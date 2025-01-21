@@ -116,6 +116,7 @@ BachelorThesis_IFI/
    pip install torch
    pip install datasets
    pip install tokenizers
+   pip install 'accelerate>=0.26.0'
    (pip install -r requirements.txt)
 
 
