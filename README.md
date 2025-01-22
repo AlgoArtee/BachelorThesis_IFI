@@ -89,6 +89,7 @@ BachelorThesis_IFI/
 2. Install dependencies:
    ```bash
    
+   # Installing Web App to be tested
    cd BachelorThesis_IFI/0_curanava/
    npm install
    
@@ -97,9 +98,11 @@ BachelorThesis_IFI/
    cd ../backend
    npm install
 
+   # Installing playwright
    cd ../../1_testing_tools/01_classic_automated_testing/playwright
    npm init playwright@latest (choose TypeScript, e2e tests: tests/e2e, Install Playwright browsers true)
 
+   # Installing Testzeus Hercules
    cd ../../02_agentic_testing/testzeus_hercules
    python -m venv hercules-venv
    ./hercules-venv/Scripts/activate
@@ -109,6 +112,7 @@ BachelorThesis_IFI/
    mkdir output
    mkdir test_data
 
+   # Installing xLAM required dependencies
    cd../../03_lam_testing/xlam
    python -m venv xlam-venv
    ./xlam-venv/Scripts/activate
