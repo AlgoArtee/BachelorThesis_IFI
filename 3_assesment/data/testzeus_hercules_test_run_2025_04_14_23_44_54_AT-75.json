@@ -1,0 +1,66 @@
+{
+  "test_case_id": "TC1744667094047_TestZeus Hercules",
+  "tool": "TestZeus Hercules",
+  "test_type": "E2E",
+  "execution_time_seconds": 77556,
+  "evaluation_time_minutes": 1293,
+  "table": [
+    {
+      "test_name": "Gherkin Test 0",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "49.34",
+      "notes": "Verify Admin Access to Patient Profiles Final Response: No patient profiles are accessible."
+    },
+    {
+      "test_name": "Gherkin Test 1",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "63.3",
+      "notes": "Verify Doctor Access to Patient Profiles"
+    },
+    {
+      "test_name": "Gherkin Test 2",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "22.0",
+      "notes": "Verify Nurse Access to Patient Profiles Final Response: Failed to proceed with the task due to insufficient information for creating patient profiles."
+    },
+    {
+      "test_name": "Gherkin Test 3",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "57.14",
+      "notes": "Verify Patient Access to Own Profile"
+    },
+    {
+      "test_name": "Gherkin Test 4",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "48.81",
+      "notes": "Navigate to Patients Detailed Profile Final Response: No patients found in the system."
+    },
+    {
+      "test_name": "Gherkin Test 5",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "103.58",
+      "notes": "Verify Patient Profile Displays Information Final Response: The Patient Profiles section is inaccessible, resulting in a failure to complete the test case."
+    },
+    {
+      "test_name": "Gherkin Test 6",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "166.99",
+      "notes": "Initiate and Verify Data Request Process Final Response: The request system is not operational as expected, and no options for requesting more data were displayed. Test execution terminated."
+    }
+  ],
+  "notes": "Tests were not completed partly because of gpt-4o-mini returned jailbreak warnings"
+}

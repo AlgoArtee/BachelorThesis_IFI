@@ -1,0 +1,154 @@
+{
+  "test_case_id": "TC1743441983798_Playwright",
+  "tool": "Playwright",
+  "test_type": "E2E",
+  "execution_time_seconds": 0,
+  "evaluation_time_minutes": 0,
+  "table": [
+    {
+      "test_name": "Playwright Test 0",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "2980s",
+      "notes": "chromium: Test passed."
+    },
+    {
+      "test_name": "Playwright Test 0",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "5124s",
+      "notes": "firefox: Test passed."
+    },
+    {
+      "test_name": "Playwright Test 0",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "16280s",
+      "notes": "webkit: Test passed."
+    },
+    {
+      "test_name": "Playwright Test 1",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "2562s",
+      "notes": "chromium: Error: Password toggle button not found"
+    },
+    {
+      "test_name": "Playwright Test 1",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "5009s",
+      "notes": "firefox: Error: Password toggle button not found"
+    },
+    {
+      "test_name": "Playwright Test 1",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "23707s",
+      "notes": "webkit: Error: Password toggle button not found"
+    },
+    {
+      "test_name": "Playwright Test 2",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "2875s",
+      "notes": "chromium: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 2",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "5353s",
+      "notes": "firefox: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 2",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "8788s",
+      "notes": "webkit: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 3",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "7682s",
+      "notes": "chromium: Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Invalid Credentials')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Invalid Credentials')\u001b[22m\n"
+    },
+    {
+      "test_name": "Playwright Test 3",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "10719s",
+      "notes": "firefox: Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Invalid Credentials')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Invalid Credentials')\u001b[22m\n"
+    },
+    {
+      "test_name": "Playwright Test 3",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "19814s",
+      "notes": "webkit: Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('text=Invalid Credentials')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Invalid Credentials')\u001b[22m\n"
+    },
+    {
+      "test_name": "Playwright Test 4",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "4740s",
+      "notes": "chromium: Test passed."
+    },
+    {
+      "test_name": "Playwright Test 4",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "9527s",
+      "notes": "firefox: Test passed."
+    },
+    {
+      "test_name": "Playwright Test 4",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30023s",
+      "notes": "webkit: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 5",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30039s",
+      "notes": "chromium: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 5",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30030s",
+      "notes": "firefox: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test 5",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30022s",
+      "notes": "webkit: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    }
+  ],
+  "notes": ""
+}

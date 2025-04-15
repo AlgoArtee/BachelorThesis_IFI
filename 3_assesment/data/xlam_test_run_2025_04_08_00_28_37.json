@@ -1,0 +1,58 @@
+{
+  "test_case_id": "TC1744064917418_xLAM",
+  "tool": "xLAM",
+  "test_type": "E2E",
+  "execution_time_seconds": 30510,
+  "evaluation_time_minutes": 509,
+  "table": [
+    {
+      "test_name": "xLAM Test 0",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\",\n    \"manager_credentials\": {\n        \"username\": \"manager1@example.com\",\n        \"password\": \"password123\"\n    },\n    \"doctor_credentials\": {\n        \"username\": \"doctor1@example.com\",\n        \"password\": \"password123\"\n    },\n    \"patient_credentials\": {\n        \"username\": \"patient1@example.com\",\n        \"password\": \"password123\"\n    }\n}",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": 47.065831899642944,
+      "notes": "test_login_redirect"
+    },
+    {
+      "test_name": "xLAM Test 1",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\"\n}",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": 28.218623399734497,
+      "notes": "test_empty_credentials_login"
+    },
+    {
+      "test_name": "xLAM Test 2",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\",\n    \"username\": \"patient1@example.com\",\n    \"password\": \"incorrect_password\"\n}",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": 43.86754369735718,
+      "notes": "test_invalid_login"
+    },
+    {
+      "test_name": "xLAM Test 3",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\"\n}",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": 53.16867804527283,
+      "notes": "test_responsive_design"
+    },
+    {
+      "test_name": "xLAM Test 4",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\",\n    \"password_field_id\": \"#password\",\n    \"view_button_id\": \"\",\n    \"username\": \"patient1@example.com\",\n    \"password\": \"password123\"\n}",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": 31.534088611602783,
+      "notes": "test_password_field_masking_view_option"
+    },
+    {
+      "test_name": "xLAM Test 5",
+      "test_data_used": "{\n    \"url\": \"http://localhost:5180/login\"\n}",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": 37.23128533363342,
+      "notes": "test_forgot_password_link"
+    }
+  ],
+  "notes": "Model does not always follow the instruction to choose only from remaining functions"
+}

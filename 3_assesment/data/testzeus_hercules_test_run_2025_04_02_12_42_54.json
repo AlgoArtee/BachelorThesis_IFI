@@ -1,0 +1,106 @@
+{
+  "test_case_id": "TC1743590574172_TestZeus Hercules",
+  "tool": "TestZeus Hercules",
+  "test_type": "E2E",
+  "execution_time_seconds": 2337,
+  "evaluation_time_minutes": 39,
+  "table": [
+    {
+      "test_name": "Gherkin Test 0",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "79.4",
+      "notes": "User should be able to login using valid username and password Final Response: Task failed at Step 5: Unable to find the 'Submit' button on the current page."
+    },
+    {
+      "test_name": "Gherkin Test 1",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "75.28",
+      "notes": "Password Field Verification Final Response: Task failed at Step 5: There is no option to view the entered password usually represented as an eye icon."
+    },
+    {
+      "test_name": "Gherkin Test 1",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "65.44",
+      "notes": "Toggling Between Viewing and Hiding the Password Final Response: Task failed due to repeated failures in finding the username and password fields."
+    },
+    {
+      "test_name": "Gherkin Test 2",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "75.67",
+      "notes": "Login with valid username and password"
+    },
+    {
+      "test_name": "Gherkin Test 2",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "102.74",
+      "notes": "Login with invalid username and password Final Response: The user was able to log in with invalid credentials, which is not the expected behavior. The task has failed."
+    },
+    {
+      "test_name": "Gherkin Test 2",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Failed",
+      "test_result": "Unknown",
+      "duration": "3455.06",
+      "notes": "Login with empty username and password fields"
+    },
+    {
+      "test_name": "Gherkin Test 3",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "114.44",
+      "notes": "Masking and viewing of entered password Final Response: The test has failed. The entered password is masked but there is no 'Show Password' checkbox or view icon to reveal the password. This does not match the expected behavior."
+    },
+    {
+      "test_name": "Gherkin Test 4",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "22.84",
+      "notes": "Verification of presence of Forgot Password link Final Response: The task has failed because the Forgot Password link is not visibly present."
+    },
+    {
+      "test_name": "Gherkin Test 5",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "25.28",
+      "notes": "Users receiving an error message for invalid credentials Final Response: Task failed at Step 3: The selectors for the username and password fields were not found on the page. Please ensure that the provided md attributes are correct."
+    },
+    {
+      "test_name": "Gherkin Test 6",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Failed",
+      "test_result": "Unknown",
+      "duration": "1884.6",
+      "notes": "Successful Login for Manager"
+    },
+    {
+      "test_name": "Gherkin Test 6",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Failed",
+      "duration": "51.3",
+      "notes": "Successful Login for Doctor Final Response: Task failed due to error: The selector [md='1'] was not found on the page. Please check the selector and try again."
+    },
+    {
+      "test_name": "Gherkin Test 6",
+      "test_data_used": "Provided and self-generated test_data",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "77.88",
+      "notes": "Successful Login for Patient "
+    }
+  ],
+  "notes": "Faulty communication? For example when trying to test the entering of invalid credentials, the user role shortly recognizes the toast error message, but this is ignored by the planner agent, which requests again as next step to check if an error message exists - which by then is already gone (toast messages have a short time of appearing) and so the result interpreted is that the user can log in with invalid credentials, although this is not true.\n\n{\n            \"content\": \"I have clicked the 'Sign In' button. However, it seems the credentials provided were invalid as an error message 'Invalid credentials' has appeared. Please provide valid credentials to proceed. \\n Current Page: http://localhost:5178/login, Title: Vite + React + TS\",\n            \"role\": \"user\",\n            \"name\": \"user\"\n        },\n        {\n            \"content\": {\n                \"plan\": \"Step 1: Launch the login page of the application\\nStep 2: Enter an invalid username and password\\nStep 3: Click the 'Login/Submit' button\\nStep 4: Check for an error message indicating incorrect username or password\\nStep 5: Verify that the user is not permitted to log in\",\n                \"next_step\": \"Check for an error message indicating incorrect username or password\",\n                \"terminate\": \"no\",\n                \"final_response\": \"\",\n                \"is_assert\": true,\n                \"assert_summary\": \"EXPECTED RESULT: An error message indicating incorrect username or password\\nACTUAL RESULT: An error message 'Invalid credentials' appeared\",\n                \"is_passed\": true,\n                \"target_helper\": \"browser\"\n            },\n            \"role\": \"assistant\",\n            \"name\": \"planner_agent\"\n        },\n        {\n            \"content\": \"I did not find any error messages indicating incorrect username or password on the current page.\\n Current Page: http://localhost:5178/login, Title: Vite + React + TS\",\n            \"role\": \"user\",\n            \"name\": \"user\"\n        },"
+}

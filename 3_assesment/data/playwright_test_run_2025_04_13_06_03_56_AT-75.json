@@ -1,0 +1,130 @@
+{
+  "test_case_id": "TC1744517036537_Playwright",
+  "tool": "Playwright",
+  "test_type": "E2E",
+  "execution_time_seconds": 16670,
+  "evaluation_time_minutes": 278,
+  "table": [
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria10.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "0s",
+      "notes": "chromium: \u001b[31m\"beforeAll\" hook timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria10.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "0s",
+      "notes": "firefox: \u001b[31m\"beforeAll\" hook timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria10.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "0s",
+      "notes": "webkit: \u001b[31m\"beforeAll\" hook timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria6.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "6448s",
+      "notes": "chromium: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria6.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "10666s",
+      "notes": "firefox: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria6.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30027s",
+      "notes": "webkit: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria7.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "4692s",
+      "notes": "chromium: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria7.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "7783s",
+      "notes": "firefox: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria7.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30037s",
+      "notes": "webkit: \u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria8.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30031s",
+      "notes": "chromium: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria8.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30042s",
+      "notes": "firefox: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria8.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Failed",
+      "test_result": "Failed",
+      "duration": "30029s",
+      "notes": "webkit: \u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria9.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "4230s",
+      "notes": "chromium: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria9.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "4449s",
+      "notes": "firefox: Test passed."
+    },
+    {
+      "test_name": "Playwright Test - AT-75/test_criteria9.spec.ts",
+      "test_data_used": "Manually Defined Data by User",
+      "test_run_status": "Done",
+      "test_result": "Success",
+      "duration": "21161s",
+      "notes": "webkit: Test passed."
+    }
+  ],
+  "notes": ""
+}
